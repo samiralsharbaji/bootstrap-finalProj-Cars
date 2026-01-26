@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>infinity automobile</title>
     <link
       rel="stylesheet"
@@ -23,97 +23,124 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+  </head>
 
-</head>
-
-<style>
-
-* {
+  <style>
+    * {
       margin: 0;
       padding: 0;
       scrollbar-width: none;
     }
     :root {
-      --primary-color: #080a13;
-      --secondary-color: #c2c5c8;
-     
+      --primary-color: #1f2931;
+      --secondary-color: #f9f9f9;
+      --third-color: #22d39e;
+      --fourth-color: #8f8f90;
+      --fifth-color: #3593eb;
+      --sixth-color: #db331b;
     }
     .navBackground {
-     /* background-color: #0b0e25; */
+      background-color: rgba(0, 0, 0);
     }
-</style>
+    .navbarLink {
+      color: white;
+    }
+    .navbarLink:hover {
+      color: aqua;
+    }
+    .mask{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 0;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+  }
+  .btn-circle{
+    border-radius: 50%;
+  }
 
+  </style>
 
-<body>
-
+  <body>
     <!-- Navbar -->
 
-<div class="container-fluid navBackground fixed-top">
-      <nav class="navbar navbar-expand-lg m-5 nav-pos">
-        <i class="fa-solid fa-chart-simple fa-lg" style="color: #63e6be"></i>
-        <a
-          href="#"
-          class="navbar-brand justify-content-start text-info text-gradient ms-2"
-          >Graph Page</a
+    <div class="container-fluid navBackground fixed-top">
+      <nav class="navbar navbar-expand-lg nav-pos">
+        <a href="#" class="navbar-brand justify-content-start text-white ms-2"
+          >CAR <span class="text-info">Book</span></a
         >
-        <a
-          href="#navBtn"
-          data-bs-toggle="collapse"
-          class="bg-warning navbar-toggler"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </a>
+        <div class="d-flex justify-content-end">
+          <a
+            href="#navBtn"
+            data-bs-toggle="collapse"
+            class="bg-secondary navbar-toggler"
+          >
+            <span class="navbar-toggler-icon small"></span>
+          </a>
+          <span class="text-secondary fs-4 d-lg-none ms-2">MENU</span>
+        </div>
         <div id="navBtn" class="collapse navbar-collapse justify-content-end">
           <ul class="navbar-nav navbar-menu justify-content-end">
             <li class="nav-item">
-              <a href="#" class="nav-link sp_text_color">Home</a>
+              <a href="#" class="nav-link text-primary active">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#Dashboard" class="nav-link">Dashboard</a>
+              <a href="./about" class="nav-link navbarLink navbarLink">About</a>
             </li>
             <li class="nav-item">
-              <a href="#Analystics" class="nav-link">Analystics</a>
+              <a href="./services" class="nav-link navbarLink navbarLink"
+                >Services</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#Reports" class="nav-link">Reports</a>
+              <a href="./pricing" class="nav-link navbarLink navbarLink"
+                >Pricing</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
+              <a href="./cars" class="nav-link navbarLink navbarLink">Cars</a>
+            </li>
+            <li class="nav-item">
+              <a href="./blog" class="nav-link navbarLink navbarLink">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact" class="nav-link navbarLink navbarLink"
+                >Contact</a
+              >
             </li>
           </ul>
-
-          <div>
-            <a href="https://www.google.com/" target="_blank"
-              ><i
-                class="fa-solid fa-magnifying-glass fa-lg"
-                style="color: #ffb83d"
-              ></i
-            ></a>
-          </div>
         </div>
       </nav>
     </div>
 
-
     <!-- 1st section -->
-
-<div class="container-fluid" id="Ana" style="padding-top: 120px">
-      <div class="row">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
         <div class="col-md-12">
           <div>
             
+              <div
+                class="mask">
+
+              <img
+                src="./imgs/bg_1.jpg.jpeg"
+                alt=""
+                class="img mask img-fluid position-relative translate-start top-0 start-0"
+              /></div>
+            <div class="fs-1 fw-bolder text-center text-white position-absolute translate-middle top-50 start-50">
+            <p
+              class="fs-1 fw-bolder text-center text-white "
+            >
+              Fast & Easy Way To Buy A Car
+            </p>
+            <p class="fs-5 fw-normal">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts</p>
+            <a href="https://vimeo.com/45830194" class="btn btn-info btn-circle p-4"><i style="color: white;" class="bi bi-caret-right-fill"></i></a><span> ــــ </span><span class="small fw-normal fs-5">Easy step for renting a car</span>
+            </div>
+          </div>
         </div>
       </div>
-</div>
-
-
-
-
-
-
-
-
-<script src="./enable-stuff.js"></script>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -126,7 +153,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
-</html>
-
-</body>
 </html>
