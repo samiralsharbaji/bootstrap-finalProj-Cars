@@ -48,18 +48,28 @@
     .navbarLink:hover {
       color: aqua;
     }
-    .mask{
-        position: absolute;
-        left: 0;
-        width: 100%;
-        top: 0;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
-  }
-  .btn-circle{
-    border-radius: 50%;
-  }
-
+    .mask {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 0;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .btn-circle {
+      border-radius: 50%;
+    }
+    .border-circle {
+      border-radius: 50%;
+      color: #8f8f90;
+    }
+    .padding-style {
+      padding-top: 200px;
+    }
+    .img-text {
+      position: relative;
+      margin-top: 20%;
+    }
   </style>
 
   <body>
@@ -118,138 +128,224 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-md-12">
-          <div>
-            
-              <div
-                class="mask">
-
-              <img
-                src="./imgs/bg_1.jpg.jpeg"
-                alt=""
-                class="img mask img-fluid position-relative translate-start top-0 start-0"
-              /></div>
-            <div class="fs-1 fw-bolder text-center text-white position-absolute translate-middle top-50 start-50">
-            <p
-              class="fs-1 fw-bolder text-center text-white "
-            >
+          <div class="">
+            <img src="./imgs/bg_1.jpg.jpeg" alt="" class="img img-fluid mask" />
+          </div>
+          <div class="img-text text-center text-white">
+            <p class="fs-1 fw-bolder text-center text-white">
               Fast & Easy Way To Buy A Car
             </p>
-            <p class="fs-5 fw-normal">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts</p>
-            <a href="https://vimeo.com/45830194" class="btn btn-info btn-circle p-4"><i style="color: white;" class="bi bi-caret-right-fill"></i></a><span> ــــ </span><span class="small fw-normal fs-5">Easy step for renting a car</span>
-            </div>
+            <p class="fs-5 fw-normal">
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country, in
+              which roasted parts
+            </p>
+            <a
+              href="https://vimeo.com/45830194"
+              class="btn btn-info btn-circle p-4"
+              ><i style="color: white" class="bi bi-caret-right-fill"></i></a
+            ><span> ــــ </span
+            ><span class="small fw-normal fs-5"
+              >Easy step for renting a car</span
+            >
           </div>
         </div>
       </div>
     </div>
 
+    <!--Make your trip - 2nd section -->
+    <div class="container-fluid mt-5 padding-style">
+      <div class="row d-flex align-items-center justify-content-center">
+        
+          <div class="col-md-4  ms-5 mt-5">
+            <div class="bg-primary p-4">
+              <form action="">
+                <div class="text-white">
+                  <h4>Make your trip</h4>
+                  <label class="form-label" for="">PICK-UP LOCATION</label>
+                  <input
+                    class="form-control bg-primary"
+                    type="text"
+                    placeholder="City, Airport, Station, etc"
+                  />
+                  <label class="form-label" for="">DROP-OFF LOCATION</label>
+                  <input
+                    class="form-control bg-primary"
+                    type="text"
+                    placeholder="City, Airport, Station, etc"
+                  />
+                  <label class="form-label" for="">PICK-UP DATE</label>
+                  <input
+                    class="form-control bg-primary"
+                    type="date"
+                    placeholder="Date"
+                  />
+                  <label class="form-label" for="" placeholder="Date"
+                    >DROP-OFF DATE</label
+                  >
+                  <input class="form-control bg-primary" type="date" />
+                  <label class="form-label" for="">DROP-OFF TIME</label>
+                  <input
+                    class="form-control bg-primary"
+                    type="time"
+                    placeholder="Time"
+                  />
+                  <button class="btn btn-info text-white w-100 mt-5">
+                    Rent A Car Now
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
 
-<!--Make your trip - 2nd section -->
-<div class="container-fluid">
+          <div class="col-md-6 mt-5 shadow p-4">
+            <h4>Better Way to Rent Your Perfect Cars</h4>
+            <div class="row m-5">
+              <div
+                class="col-md-6 d-flex align-items-center justify-content-center"
+              >
+                <div class="col-md-6 text-center">
+                  <i class="fa-solid fa-map fa-2xl" style="color: #74c0fc"></i>
+                  <p>Choose Your Pickup Location</p>
+                </div>
+                <div class="col-md-6 text-center">
+                  <i
+                    class="fa-regular fa-handshake fa-2xl border border-circle"
+                    style="color: #74c0fc"
+                  ></i>
+                  <p>Select the Best Deal</p>
+                </div>
+                <div class="col-md-6 text-center">
+                  <i
+                    class="fa-solid fa-car-side fa-2xl"
+                    style="color: #74c0fc"
+                  ></i>
+                  <p>Reserve Your Rental Car</p>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary mt-2">
+              Reserve eYour Perfect Car
+            </button>
+          </div>
+        
+      </div>
+    </div>
+
+    <!-- Feeatured Vehicles - 3rd section -->
+    <div class="container-fluid mt-5">
       <div class="row justify-content-center">
-        <div class="col-md-12">
+        <div class="col-md-8">
           <div>
-
+            <h6 class="text-primary text-center">What we offer</h6>
+            <h1 class="text-center">Feeatured Vehicles</h1>
+          </div>
+        <div class="row justify-content-center mb-3 mt-5">
+        <div class="col-md-3 mt-5">
+          <div class="card shadow">
+            <div class="card-header"><img src="./imgs/car-1.jpg.jpeg" class="img img-fluid rounded" alt=""></div>
+            <div class="card-body">
+              <h5>Mercedes Grand Sedan</h5>
+              <span class="text-muted">Chevrolet</span>
+              <span class="text-primary">$500</span><span class="text-muted">/day</span>
+              <button class="btn btn-primary">Book now</button><button class="btn btn-info">Details</button>
+            </div>
           </div>
         </div>
-      </div>
-</div>
+        </div>
 
-
-<!-- Feeatured Vehicles - 3rd section -->
-<div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-md-12">
-          <div>
-
+        <div class="col-md-3 mt-5">
+          <div class="card shadow">
+            <div class="card-header"><img src="./imgs/car-2.jpg.jpeg" class="img img-fluid rounded" alt=""></div>
+            <div class="card-body">
+              <h5>Mercedes Grand Sedan</h5>
+              <span class="text-muted">Chevrolet</span>
+              <span class="text-primary">$500</span><span class="text-muted">/day</span>
+              <button class="btn btn-primary">Book now</button><button class="btn btn-info">Details</button>
+            </div>
           </div>
         </div>
-      </div>
-</div>
+        </div>
 
-
-<!-- About us Welcome to Carbook - 4th section -->
-<div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-md-12">
-          <div>
-
+        <div class="col-md-3 mt-5">
+          <div class="card shadow">
+            <div class="card-header"><img src="./imgs/car-3.jpg.jpeg" class="img img-fluid rounded" alt=""></div>
+            <div class="card-body">
+              <h5>Mercedes Grand Sedan</h5>
+              <span class="text-muted">Chevrolet</span>
+              <span class="text-primary">$500</span><span class="text-muted">/day</span>
+              <button class="btn btn-primary">Book now</button><button class="btn btn-info">Details</button>
+            </div>
           </div>
         </div>
-      </div>
-</div>
+        </div>
 
-
-<!-- Services Our Latest Services - 5th section -->
-<div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-md-12">
-          <div>
-
-          </div>
         </div>
       </div>
-</div>
+    </div>
 
-
-<!-- Do You Want To Earn With Us? So Don't Be Late - 6th section -->
-<div class="container-fluid">
+    <!-- About us Welcome to Carbook - 4th section -->
+    <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-md-12">
-          <div>
-
-          </div>
+          <div></div>
         </div>
       </div>
-</div>
+    </div>
 
-
-<!-- Testimonial Happy Clients -  7th section -->
-<div class="container-fluid">
+    <!-- Services Our Latest Services - 5th section -->
+    <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-md-12">
-          <div>
-
-          </div>
+          <div></div>
         </div>
       </div>
-</div>
+    </div>
 
-
-<!-- Blog Recent Blog - 8th section -->
-<div class="container-fluid">
+    <!-- Do You Want To Earn With Us? So Don't Be Late - 6th section -->
+    <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-md-12">
-          <div>
-
-          </div>
+          <div></div>
         </div>
       </div>
-</div>
+    </div>
 
-
-<!-- static figure -->
-<div class="container-fluid">
+    <!-- Testimonial Happy Clients -  7th section -->
+    <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-md-12">
-          <div>
-
-          </div>
+          <div></div>
         </div>
       </div>
-</div>
+    </div>
 
-
-<!-- footer section -->
-<div class="container-fluid">
+    <!-- Blog Recent Blog - 8th section -->
+    <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-md-12">
-          <div>
-
-          </div>
+          <div></div>
         </div>
       </div>
-</div>
+    </div>
 
+    <!-- static figure -->
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <div></div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
