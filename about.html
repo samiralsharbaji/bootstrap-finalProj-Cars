@@ -1,11 +1,478 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-</head>
-<body>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     
-</body>
+    <link rel="stylesheet" href="./style.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <div class="container-fluid navBackground fixed-top">
+      <nav class="navbar navbar-expand-lg nav-pos">
+        <a href="#" class="navbar-brand justify-content-start text-white ms-2"
+          >CAR <span class="text-info">Book</span></a
+        >
+        <div class="d-flex justify-content-end">
+          <a
+            href="#navBtn"
+            data-bs-toggle="collapse"
+            class="bg-secondary navbar-toggler"
+          >
+            <span class="navbar-toggler-icon small"></span>
+          </a>
+          <span class="text-secondary fs-4 d-lg-none ms-2">MENU</span>
+        </div>
+        <div id="navBtn" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav navbar-menu justify-content-end">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link text-primary active"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./about.html" class="nav-link text-white navbarLink navbarLink"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./services.html" class="nav-link  text-white navbarLink navbarLink"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./pricing.html" class="nav-link text-white  navbarLink navbarLink"
+                >Pricing</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./cars.html" class="nav-link  text-white navbarLink navbarLink"
+                >Cars</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./blog.html" class="nav-link  text-white navbarLink navbarLink"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link text-white  navbarLink navbarLink"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+ <!--breqadcrumb which page we are now  -->
+        <nav
+          style=" --bs-breadcrumb-divider: &quot;>&quot;"
+          aria-label="breadcrumb"
+        >
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item text-secondary"><a href="#">Home</a></li>
+            <li class="breadcrumb-item text-secondary active" aria-current="page">About</li>
+          </ol>
+        </nav>
+
+    </div>
+
+    <!-- About us Welcome to Carbook - 4th section -->
+    <div class="container-fluid bg-sp-color p-4">
+      <div class="row justify-content-center">
+        
+        
+        <div class="col-md-6 bg-white">
+           
+
+        
+          <div class="">
+            <img src="./imgs/about.jpg.jpeg" class="img img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p class="text-uppercase text-white mt-5">About us</p>
+          <h1 class="text-capitalize text-white">welcome to carbook</h1>
+          <p class="text-white">
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia. It is a paradisematic country, in which
+            roasted parts of sentences fly into your mouth.
+          </p>
+          <p class="text-white">
+            On her way she met a copy. The copy warned the Little Blind Text,
+            that where it came from it would have been rewritten a thousand
+            times and everything that was left from its origin would be the word
+            "and" and the Little Blind Text should turn around and return to its
+            own, safe country. A small river named Duden flows by their place
+            and supplies it with the necessary regelialia. It is a paradisematic
+            country, in which roasted parts of sentences fly into your mouth.
+          </p>
+          <button class="btn btn-primary btn-lg">Search Vehicle</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Do You Want To Earn With Us? So Don't Be Late - 6th section -->
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <img
+          src="./imgs/about.jpg.jpeg"
+          class="img img-fluid img-earn d-md-block"
+          alt=""
+        />
+        <div class="col-md-12">
+          <div class="img-caption">
+            <h1 class="text-white">
+              Do You Want To Earn With Us? So Don't Be Late.
+            </h1>
+            <a href="#" class="btn btn-primary">Become a Driver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial Happy Clients -  7th section -->
+    <div class="container py-5 my-4">
+      <h5 class="text-center text-primary text-uppercase mb-2">Testimonials</h5>
+      <h1 class="text-center text-capitalize mb-5">Happy Clients</h1>
+
+      <div
+        id="carouselExample"
+        class="carousel slide testimonials-carousel"
+        data-bs-ride="carousel"
+        data-bs-interval="5000"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonial-item">
+              <img
+                src="./imgs/person_1.jpg.jpeg"
+                alt="Roger Scott"
+                class="testimonial-img"
+              />
+              <div class="testimonial-content">
+                <p class="testimonial-text">
+                  Far far away, behind the wond mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <p class="testimonial-name">Roger Scott</p>
+                <p class="testimonial-role">System Analyst</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="testimonial-item">
+              <img
+                src="./imgs/person_2.jpg.jpeg"
+                alt="Client"
+                class="testimonial-img"
+              />
+              <div class="testimonial-content">
+                <p class="testimonial-text">
+                  Far far away, behind the wond mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <p class="testimonial-name">Roger Scott</p>
+                <p class="testimonial-role">System Analyst</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="testimonial-item">
+              <img
+                src="./imgs/person_3.jpg.jpeg"
+                alt="Client"
+                class="testimonial-img"
+              />
+              <div class="testimonial-content">
+                <p class="testimonial-text">
+                  Far far away, behind the wond mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <p class="testimonial-name">Roger Scott</p>
+                <p class="testimonial-role">System Analyst</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="testimonial-item">
+              <img
+                src="./imgs/person_2.jpg.jpeg"
+                alt="Client"
+                class="testimonial-img"
+              />
+              <div class="testimonial-content">
+                <p class="testimonial-text">
+                  Far far away, behind the wond mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <p class="testimonial-name">Roger Scott</p>
+                <p class="testimonial-role">System Analyst</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="testimonial-item">
+              <img
+                src="./imgs/person_1.jpg.jpeg"
+                alt="Client"
+                class="testimonial-img"
+              />
+              <div class="testimonial-content">
+                <p class="testimonial-text">
+                  Far far away, behind the wond mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <p class="testimonial-name">Roger Scott</p>
+                <p class="testimonial-role">System Analyst</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- static figure -->
+    <div class="container-fluid mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-3 d-block col-lg-3 d-flex statistic-BGcolor">
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-3 statistic-BGcolor">
+              <div class="d-flex align-items-center justify-content-center">
+                <p class="text-primary fs-1 me-2">60</p>
+                <div class="col-md-2">
+                  <span class="text-dark">year</span>
+                  <span class="text-dark">Experienced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-block col-lg-3 d-flex sta">
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-3 bg-light">
+              <div class="d-flex align-items-center justify-content-center">
+                <p class="text-primary fs-1 me-2">1,090</p>
+                <div class="col-md-2">
+                  <span class="text-dark">Total</span>
+                  <span class="text-dark">Cars</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-block col-lg-3 d-flex sta">
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-3 bg-light">
+              <div class="d-flex align-items-center justify-content-center">
+                <p class="text-primary fs-1 me-2">2,590</p>
+                <div class="col-md-2">
+                  <span class="text-dark">Happy</span>
+                  <span class="text-dark">Customers</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-block col-lg-3 d-flex sta">
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-3 bg-light">
+              <div class="d-flex align-items-center justify-content-center">
+                <p class="text-primary fs-1 me-2">67</p>
+                <div class="col-md-2">
+                  <span class="text-dark">Total</span>
+                  <span class="text-dark">Branches</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <div class="container-fluid bg-dark mt-5">
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-3">
+          <div class="logo mt-2 mb-4">
+            <a
+              href="#"
+              class="navbar-brand justify-content-start text-white ms-2"
+              >CAR <span class="text-info">Book</span></a
+            >
+          </div>
+          <div class="sub-paragraph mt-5">
+            <p class="text-white">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+            </p>
+          </div>
+          <div class="social-media-logo">
+            <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff"></i>
+            <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff"></i>
+            <i
+              class="fa-brands fa-square-instagram fa-xl"
+              style="color: #fcfcfc"
+            ></i>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="text-white">
+            <p class="fs-3">Information</p>
+            <p><a href="#" class="text-white text-decoration-none">About</a></p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Services</a>
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none"
+                >Terms and Conditions</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none"
+                >Best Price Guarantee</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none"
+                >Privacy & Cookies Policy</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="text-white">
+            <p class="fs-3">Customer Support</p>
+            <p><a href="#" class="text-white text-decoration-none">FAQ</a></p>
+            <p>
+              <a href="#" class="text-white text-decoration-none"
+                >Payment Option</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none"
+                >Booking Tips</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none"
+                >How it works</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none">Contact Us</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="text-white">
+            <p class="fs-3">Have a Questions?</p>
+            <p>
+              <i
+                class="fa-solid fa-location-dot fa-xl"
+                style="color: #ffffff"
+              ></i>
+              203 Fake St. Mountain View, San Francisco, California, USA
+            </p>
+            <p>
+              <a href="#" class="text-white text-decoration-none"
+                ><i class="fa-solid fa-phone fa-xl" style="color: #fcfcfc"></i>
+                +2 392 3929 210</a
+              >
+            </p>
+            <p>
+              <a
+                href="mailto:info@yourdomain.com"
+                class="text-white text-decoration-none"
+              >
+                <i class="fa-solid fa-envelope"></i> info@yourdomain.com
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-12 text-center mt-5 mb-5">
+          <p class="text-white">
+            Copyright &copy; 2026 All rights reserved | This template is made
+            with by Colorlib
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
